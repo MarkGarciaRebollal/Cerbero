@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="./style.css" rel="stylesheet">
+        <link href="Sources/SVG/wolf-4-svgrepo-com.svg" rel="icon" type="image/svg">
+        <title>Cerbero</title>
+        <script src="/Scripts/pwd_Generator.js"></script>
+        <script src="/Scripts/buttom_Sync.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="/index.html">
+                <img src="Sources/SVG/wolf-4-svgrepo-com.svg" alt="Logo de la web" id="wolf">
+            </a>
+
+            <h1 id="product">CERBERO</h1>
+        </header>
+
+        <main>
+            
+            <h2 id="title">Generador de contraseñas seguras y aleatorias online</h2>          
+
+            <p class="center margin-bottom">Utilice nuestro generador de contraseñas online para crear al instante una contraseña segura y aleatoria.</p>
+
+            <h3 class="center margin-bottom">Personalice su contraseña</h3>
+
+            <!--Script showing-->
+            <div class="center margin-bottom">
+                <label for="passwordLength">Número de caracteres: </label>
+                <input id="passwordRange" type="range" step="1" min="9" max="50" value="12" onclick="sync_numbers (), generator ()">
+                <input id="passwordLength" type="number" step="1" min="9" max="50" value="12" onclick="sync_range (), generator ()">
+                <!--Buttom create password-->
+                <img src="/Sources/SVG/refresh-cw-alt-3-svgrepo-com.svg" width="25px" alt="Generar" class="inline-block" onclick="generator ()">
+                <img src="/Sources/SVG/copy.svg" width="25px" alt="Copiar">
+                <br>
+                <p id="pwd_Result"></p> <!--Showing the result-->
+            </div>             
+
+
+            <!--Place holder de botón para copiar contraseña-->
+            <form class="center margin-bottom">
+                <input type="submit" value="Copiar contraseña" class="button">
+            </form>
+
+        </main>
+
+        <footer>
+
+            <!--Caja de comentarios para el feedback-->
+            <form class="margin-top" action="/comentarios.html" method="POST">
+                <label for="coments">Déjenos su más sincera opinion, gracias</label>
+                <br>
+                <textarea id="coments" name="feedback" rows="4" cols="35">Feedback...</textarea>
+            </form>
+
+            <!--Botón enviar-->
+            <form>
+                <input class="button" style="margin-top: 10px;"  type="submit" value="Enviar">
+            </form>
+            
+
+            <nav class="margin-top" id="nav-rrss">
+                <a href="https:/www.linkedin.com/in/marcos-garcia-rebollal" target="_blank">
+                    <img src="/Sources/SVG/linkedin-svgrepo-com.svg" alt="Linkedin del autor" width="40px" />
+                </a>
+            </nav> 
+             
+        </footer>
+        
+
+        <!--Script autorun-->
+        <script>generator()</script>
+
+    </body>
+</html>
