@@ -34,7 +34,7 @@ function generator () {
         console.log("Esta es una nueva contraseña: " + pwd);
     
         //Showing the result
-        document.getElementById("pwd_Result").textContent = "Contraseña: " + pwd;
+        document.getElementById("pwd_Result").textContent = pwd;
 
     }
         else{

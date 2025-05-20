@@ -2,5 +2,10 @@
 
 
 function copyButton () {
-    const pwd = document.getElementById().innerText;
+
+    const pwd = document.getElementById("pwd_Result").innerText;
+    navigator.clipboard.writeText(pwd)
+
+    console.log("Copying the password to the client's clipboard")
+
 }

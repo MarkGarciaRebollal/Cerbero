@@ -6,6 +6,7 @@
         <title>Cerbero</title>
         <script src="/Scripts/pwd_Generator.js"></script>
         <script src="/Scripts/button_Sync.js"></script>
+        <script src="/Scripts/Copy_button.js"></script>
     </head>
 
     <body>
@@ -34,13 +35,14 @@
                 
                 <!--Buttom create password-->
                 <img src="/Sources/SVG/refresh-cw-alt-3-svgrepo-com.svg" width="25px" alt="Generar contraseña" class="inline-block" onclick="generator ()">
-                <img src="/Sources/SVG/copy.svg" width="25px" alt="Copiar contraseña" class="inline-block" onclick="">
+                <img src="/Sources/SVG/copy.svg" width="25px" alt="Copiar contraseña" class="inline-block" onclick="copyButton ()">
                 <br>
+                <label for="pwd_Result">Contraseña: </label>
                 <p id="pwd_Result"></p> <!--Showing the result-->
 
                 <!--Place holder de botón para copiar contraseña-->
                 <br>
-                <button class="center margin-bottom button" onclick="generator ()">Copiar contraseña</button>
+                <button class="center margin-bottom button" onclick="copyButton ()">Copiar contraseña</button>
             </div>            
 
 
