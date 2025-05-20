@@ -31,18 +31,18 @@
                 <label for="passwordLength">Número de caracteres: </label>
                 <input id="passwordRange" type="range" step="1" min="9" max="50" value="12" onclick="sync_numbers (), generator ()">
                 <input id="passwordLength" type="number" step="1" min="9" max="50" value="12" onclick="sync_range (), generator ()">
+                
                 <!--Buttom create password-->
                 <img src="/Sources/SVG/refresh-cw-alt-3-svgrepo-com.svg" width="25px" alt="Generar contraseña" class="inline-block" onclick="generator ()">
                 <img src="/Sources/SVG/copy.svg" width="25px" alt="Copiar contraseña" class="inline-block" onclick="">
                 <br>
                 <p id="pwd_Result"></p> <!--Showing the result-->
-            </div>             
 
+                <!--Place holder de botón para copiar contraseña-->
+                <br>
+                <button class="center margin-bottom button" onclick="generator ()">Copiar contraseña</button>
+            </div>            
 
-            <!--Place holder de botón para copiar contraseña-->
-            <form class="center margin-bottom">
-                <input type="submit" value="Copiar contraseña" class="button">
-            </form>
 
         </main>
 
@@ -71,7 +71,7 @@
         
 
         <!--Script autorun-->
-        <script>generator()</script>
+        <script>generator ()</script>
 
     </body>
 </html>

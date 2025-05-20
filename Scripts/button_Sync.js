@@ -1,4 +1,4 @@
-//Sync both buttoms of the password lenght selector
+//Sync both buttons of the password lenght selector
 
 
 function sync_range () {
