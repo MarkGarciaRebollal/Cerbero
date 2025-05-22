@@ -25,10 +25,11 @@
 
             <p class="center margin-bottom">Utilice nuestro generador de contraseñas online para crear al instante una contraseña segura y aleatoria.</p>
 
-            <h3 class="center margin-bottom">Personalice su contraseña</h3>
+            <!--main body block-->
+            <div class="center margin-bottom" id="main_block">
+                
+                <h3 class="center margin-bottom">Personalice su contraseña</h3>
 
-            <!--Script showing-->
-            <div class="center margin-bottom">
                 <label for="passwordLength">Número de caracteres: </label>
                 <input id="passwordRange" type="range" step="1" min="9" max="50" value="12" onclick="sync_numbers (), generator ()">
                 <input id="passwordLength" type="number" step="1" min="9" max="50" value="12" onclick="sync_range (), generator ()">
